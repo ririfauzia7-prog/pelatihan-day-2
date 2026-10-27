@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <header>
+        <h1>Task Manager</h1>
+        <p>Aplikasi sederhana untuk mengelola tugas harian.</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <a href="#ringkasan">Ringkasan</a>
+        <a href="#daftar-tugas">Daftar Tugas</a>
+        <a href="#tambah-tugas">Tambah Tugas</a>
+    </nav>
+
+    <main>
+        <section id="ringkasan">
+            <h2>Ringkasan Tugas</h2>
+            <article>
+                <h3>Tugas 1</h3>
+                <p>Deskripsi singkat tenatnag tugas 1</p>
+            </article>
+            <article>
+                <h3>Tugas 2</h3>
+                <p>Deskripsi singkat tenatnag tugas 2</p>
+            </article>
+            <article>
+                <h3>Tugas 3</h3>
+                <p>Deskripsi singkat tenatnag tugas 3</p>
+            </article>
+        </section>
+
+        <section id="daftar-tugas">
+            <h2>Daftar Tugas</h2>
+            <table border="2">
+                <caption>Daftar Tugas Mingguan</caption>
+                <thead>
+                    <tbody>
+                    <tr>
+                        <th scope="col">Nomor</th>
+                        <th scope="col">Nama Tugas</th>
+                        <th scope="col">Prioritas</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                    </tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Membuat halaman HTML</td>
+                        <td>Utama</td>
+                        <td>Selesai</td>
+                        <td><button>edit</button> <button>Hapus</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Membuat Framework Laravel</td>
+                        <td>Sedang</td>
+                        <td>Berjalan</td>
+                        <td><button>edit</button> <button>Hapus</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Membuat kode phython</td>
+                        <td>Rendah</td>
+                        <td>Selesai</td>
+                        <td><button>edit</button> <button>Hapus</button></td>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+
+        <section id="tambah-tugas">
+            <h2>Tambah Tugas</h2>
+            <form action="#" method="post">
+                <label for="nama-tugas">Nama Tugas:</label>
+                <input type="text" id="nama-tugas" name="nama-tugas" required><br><br>
+
+                <label for="prioritas">Prioritas:</label>
+                <select id="prioritas" name="prioritas" required>
+                    <option value="">Pilih Prioritas</option>
+                    <option value="tinggi">Tinggi</option>
+                    <option value="sedang">Sedang</option>
+                    <option value="rendah">Rendah</option>
+                </select><br><br>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="">Pilih Status</option>
+                    <option value="belum-selesai">Belum Selesai</option>
+                    <option value="selesai">Selesai</option>
+                </select><br><br>
+
+                <button type="submit">Kirim</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HIMASI </p>
+    </footer>
+
+</body>
+</html>
